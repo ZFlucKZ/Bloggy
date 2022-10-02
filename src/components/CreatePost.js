@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useFormInput } from '../customHooks';
 import db from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
@@ -17,9 +16,9 @@ function CreatePost() {
 
     const postsColl = collection(db, 'posts');
     await addDoc(postsColl, {
-      title,
-      subTitle,
-      content,
+      title: title.value,
+      content: content.value,
+      subTitle: subTitle.value,
       createdAt: new Date(),
     });
   }
