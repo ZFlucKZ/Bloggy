@@ -8,7 +8,7 @@ function PostDetail() {
   const { postId } = useParams();
 
   useEffect(() => {
-    const docRef = doc(db, 'products', postId);
+    const docRef = doc(db, 'posts', postId);
 
     onSnapshot(docRef, (snapshot) => {
       console.log('snapshot.data()', snapshot.data());

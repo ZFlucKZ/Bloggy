@@ -1,5 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import { Navbar, Home, CreatePost, PostDetail } from './index.js';
+import Navbar from './Navbar';
+import Home from './Home';
+import CreatePost from './CreatePost';
+import PostDetail from './PostDetail';
 
 function App() {
   return (

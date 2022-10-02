@@ -16,7 +16,7 @@ function Home() {
         };
       });
 
-      console.log('posts', posts);
+      // console.log('posts', posts);
       setPosts(posts);
     });
   }, []);
